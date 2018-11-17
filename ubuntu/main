@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+COMMAND_NAME=$1
+SOFTWARE_NAME=$2
+
+echo 'Welcome To Ubuntu Software Manager!'
+
+echo ''
+
+echo "You are calling the command-line \"$COMMAND_NAME $SOFTWARE_NAME\"."
