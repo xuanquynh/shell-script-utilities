@@ -34,6 +34,9 @@ case $SOFTWARE_NAME in
     'source-code-pro')
         bash ./fonts/source-code-pro $COMMAND_NAME
     ;;
+    'mongodb-compass')
+        bash ./softwares/$SOFTWARE_NAME $COMMAND_NAME
+    ;;
 esac
 
 echo ''
