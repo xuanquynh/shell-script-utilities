@@ -1,10 +1,9 @@
-# Shell Scripts to install, update, configure or do something for Linux distributions
+Some shell script utilities for Linux.
 
-- Ubuntu
+## Contributing
 
-# Usage
-- To install all necessary softwares, run the command below:
+Please read the [contribution guide](https://seriquynh.com/oss/contributing?github=xuanquynh/shell-script-utilities) for more information.
 
-```bash
-sudo /path/to/{distribution}/install.sh
-```
+## License
+
+Please read the [MIT license](LICENSE.md) for more information.
