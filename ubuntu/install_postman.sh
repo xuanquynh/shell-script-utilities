@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 
-wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+if [ "$USER" != "root" ]; then
+    echo "The current user is \"$USER\", sudo permissions are required."
+    exit 0
+fi
 
-sudo rm -rf /opt/Postman
-sudo tar -xzf postman.tar.gz -C /opt
-# sudo ln -s /opt/Postman/Postman /usr/bin/postman --force
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz > /dev/null 2>&1
 
-rm postman.tar.gz
+rm -rf /opt/Postman
+tar -xzf postman.tar.gz -C /opt
+
+rm -f postman.tar.gz
+
