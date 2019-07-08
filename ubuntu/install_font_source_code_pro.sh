@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/bin/env bash
 # Userland mode (~$USER/), (~/).
 
 # ~/.fonts is now deprecated and that
