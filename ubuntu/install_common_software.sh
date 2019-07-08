@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
 if [ "$USER" != "root" ]; then
-    echo "The current is \"$USER\", sudo permissions are required."
+    echo "The current user is \"$USER\", sudo permissions are required."
     exit 1
 fi
 
 apt update
 
-if [ "$(which curl)" == "" ]; then
-    apt install --yes curl
-fi
-
-
+apt-get install --yes \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
 
