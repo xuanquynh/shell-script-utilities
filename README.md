@@ -1,7 +1,7 @@
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/xuanquynh/shell-script-utilities.svg?label=version)
 ![GitHub](https://img.shields.io/github/license/xuanquynh/shell-script-utilities.svg)
 
-Some shell script utilities for Linux.
+Some shell script utilities for Linux
 
 ## Tools
 
