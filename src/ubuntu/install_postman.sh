@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
 

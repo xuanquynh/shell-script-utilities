@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 # Userland mode (~$USER/), (~/).
 
 # ~/.fonts is now deprecated and that

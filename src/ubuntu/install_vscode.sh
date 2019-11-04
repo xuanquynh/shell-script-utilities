@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 if [ -e vscode.deb ]; then
     rm -f vscode.deb
