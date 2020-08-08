@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+COMMAND=$1
+if [ "$COMMAND" = "self-update" ]; then
+    cd "$DIR"
+    git fetch origin --prune
+    git rebase origin/master
+    exit 0
+fi
+
+if [ "$COMMAND" = "get-docker-container-ip" ]; then
+    BIN="$DIR/src/tools/get-docker-container-ip.sh"
+    bash "$BIN" $2
+    exit 0
+fi
+
+echo "Shell Script Utilities dev-master"
+echo ""
+echo "Available Commands"
+echo "  self-update              Upgrade utilities to the next version"
+echo "  get-docker-container-ip  Display the ip of a docker container (id or name)"
