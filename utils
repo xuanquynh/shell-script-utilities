@@ -3,6 +3,15 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 COMMAND=$1
+
+if [ "$COMMAND" = "help" ]; then
+    REAL_COMMAND=$2
+    BIN="$DIR/src/tools/$REAL_COMMAND.sh"
+    bash "$BIN" --help
+    exit 0
+
+fi
+
 if [ "$COMMAND" = "self-update" ]; then
     cd "$DIR"
     git fetch origin --prune
@@ -16,8 +25,14 @@ if [ "$COMMAND" = "get-docker-container-ip" ]; then
     exit 0
 fi
 
+if [ "$COMMAND" != "" ]; then
+    echo "Command [$COMMAND] was not found."
+    exit 1
+fi
+
 echo "Shell Script Utilities dev-master"
 echo ""
 echo "Available Commands"
 echo "  self-update              Upgrade utilities to the next version"
 echo "  get-docker-container-ip  Display the ip of a docker container (id or name)"
+echo "  help                     Display the help of a command"
