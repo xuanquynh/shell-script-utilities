@@ -1,0 +1,152 @@
+{
+    "public-property": {
+        "prefix": "pup",
+        "body": [
+            "\/**",
+            " * ${1:Describe}",
+            " *",
+            " * @var ${2:mixed}",
+            " *\/",
+            "public $${3:variable};"
+        ],
+        "description": "Define a public property with full comments."
+    },
+    "protected-property": {
+        "prefix": "pop",
+        "body": [
+            "\/**",
+            " * ${1:Describe}",
+            " *",
+            " * @var ${2:mixed}",
+            " *\/",
+            "protected $${3:variable};"
+        ],
+        "description": "Define a protected property with full comments."
+    },
+    "private-property": {
+        "prefix": "pip",
+        "body": [
+            "\/**",
+            " * ${1:Describe}",
+            " *",
+            " * @var ${2:mixed}",
+            " *\/",
+            "private $${3:variable};"
+        ],
+        "description": "Define a private property with full comments."
+    },
+    "public-method": {
+        "prefix": "pum",
+        "body": [
+            "\/**",
+            " * ${1:Describe}.",
+            " * ",
+            " * @return ${2:void}",
+            " *\/",
+            "public function ${3:method}()",
+            "{",
+            "    ${4:// Todo}",
+            "}"
+        ],
+        "description": "Define a public method with full comments."
+    },
+    "abstract-public-method": {
+        "prefix": "apum",
+        "body": [
+            "\/**",
+            " * ${1:Describe}.",
+            " * ",
+            " * @return ${2:void}",
+            " *\/",
+            "abstract public function ${3:method}();"
+        ],
+        "description": "Define an abstract public method with full comments."
+    },
+    "public-contrutor": {
+        "prefix": "pumc",
+        "body": [
+            "\/**",
+            " * ${1:Describe}.",
+            " * ",
+            " * @return ${2:void}",
+            " *\/",
+            "public function __construct()",
+            "{",
+            "    ${3:// Todo}",
+            "}"
+        ],
+        "description": "Define a public method with full comments."
+    },
+    "protected-method": {
+        "prefix": "pom",
+        "body": [
+            "\/**",
+            " * ${1:Describe}.",
+            " * ",
+            " * @return ${2:void}",
+            " *\/",
+            "protected function ${3:method}()",
+            "{",
+            "    ${4:// Todo}",
+            "}"
+        ],
+        "description": "Define a public method with full comments."
+    },
+    "namespace-class": {
+        "prefix": "nc",
+        "body": [
+            "namespace ${1:SomeNamespace};",
+            "",
+            "class ${2:SomeClass}",
+            "{",
+            "    ${3://}",
+            "}"
+        ],
+        "description": "Define a new class with a namespace."
+    },
+    "namespace-interface": {
+        "prefix": "ni",
+        "body": [
+            "namespace ${1:SomeNamespace};",
+            "",
+            "interface ${2:SomeInterface}",
+            "{",
+            "    ${3://}",
+            "}"
+        ],
+        "description": "Define a new interface with a namespace."
+    },
+    "namespace-test": {
+        "prefix": "nt",
+        "body": [
+            "namespace ${1:SomeNamespace};",
+            "",
+            "use PHPUnit\\Framework\\TestCase;",
+            "",
+            "class ${2:SomeTest} extends TestCase",
+            "{",
+            "    ${3://}",
+            "}"
+        ],
+        "description": "Define a new class test with phpunit."
+    },
+    "multiple-lines-comment-block": {
+        "prefix": "mc",
+        "body": [
+            "/**",
+            " * ${1:Describe}",
+            " */"
+        ],
+        "description": "Define multiple lines comment block."
+    },
+    "phpunit-test-method": {
+        "prefix": "putm",
+        "body": [
+            "public function test${1:Something}()",
+            "{",
+            "    ${2://}",
+            "}"
+        ],
+        "description": "Define a public phpunit test method."
+    }
+}

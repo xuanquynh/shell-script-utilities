@@ -1,0 +1,27 @@
+{
+    "editor.fontFamily": "Source Code Pro",
+    "editor.fontSize": 12,
+    "editor.lineHeight": 19,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [80, 120],
+    "explorer.openEditors.visible": 0,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "afterDelay",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "**/vendor/*/**": true,
+        "**/node_modules/*/**": true
+    },
+    "terminal.integrated.fontSize": 13,
+    "window.title": "${dirty}${activeEditorLong}",
+    "workbench.colorTheme": "Monokai"
+}
