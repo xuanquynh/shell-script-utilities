@@ -1,3 +1,4 @@
+#/usr/bin/env bash
 if [ -f "/etc/profile.d/rvm.sh" ]; then
     source "/etc/profile.d/rvm.sh"
 fi
