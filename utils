@@ -6,7 +6,7 @@ COMMAND=$1
 
 if [ "$COMMAND" = "help" ]; then
     REAL_COMMAND=$2
-    BIN="$DIR/src/tools/$REAL_COMMAND.sh"
+    BIN="$DIR/helper/$REAL_COMMAND.sh"
     bash "$BIN" --help
     exit 0
 
@@ -20,7 +20,7 @@ if [ "$COMMAND" = "self-update" ]; then
 fi
 
 if [ "$COMMAND" = "get-docker-container-ip" ]; then
-    BIN="$DIR/src/tools/get-docker-container-ip.sh"
+    BIN="$DIR/helper/get-docker-container-ip.sh"
     bash "$BIN" $2
     exit 0
 fi
