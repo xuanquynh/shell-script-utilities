@@ -1,20 +1,9 @@
-![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/xuanquynh/shell-script-utilities.svg?label=version)
-![GitHub](https://img.shields.io/github/license/xuanquynh/shell-script-utilities.svg)
+## My Ubuntu Desktop
+```bash
+$ docker volume create mysql5.7-data
+$ docker run --name mysql5.7 -e MYSQL_ROOT_PASSWORD=secret -d -p 33057:3306 -v mysql5.7-data:/var/lib/mysql mysql:5.7
+```
 
-Some shell script utilities for Linux
-
-## Tools
-
-    $ ./test_network_speed.sh
-
-## Ubuntu
-
-    $ ./install_common_software.sh
-    $ ./install_font_source_code_pro.sh
-    $ ./install_git.sh
-    $ ./install_go.sh 1.12.6 # VERSION=$1
-    $ ./install_postman.sh
-    $ ./install_rvm.sh
-    $ ./install_skype.sh
-    $ ./install_vim.sh
-    $ ./install_vscode.sh
+```sql
+CREATE DATABASE `dbname` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
