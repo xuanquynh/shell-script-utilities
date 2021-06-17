@@ -4,10 +4,13 @@
 
 Here are a few commands that I run a ton of times on my Ubuntu Desktop. So, I just list here to find them whenever I am lazy to typing.
 
-### Create a MySQL 5.7 volume and container
+### Create a MySQL volume and container
 ```bash
 $ docker volume create mysql5.7-data
 $ docker run --name mysql5.7 -e MYSQL_ROOT_PASSWORD=secret -d -p 33057:3306 -v mysql5.7-data:/var/lib/mysql mysql:5.7
+# MySQL 8.0
+docker volume create mysql8.0-data
+docker run -d --name mysql8.0 -e MYSQL_ROOT_PASSWORD=secret -v mysql8.0-data:/var/lib/mysql -p 33080:3306 mysql:8.0
 ```
 
 ### Create a new MySQL database with specific charset and collation
