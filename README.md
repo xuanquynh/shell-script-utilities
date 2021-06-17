@@ -41,3 +41,9 @@ sudo mysqladmin -S /var/run/mysqld/mysqld.sock shutdown
 
 sudo service mysql start
 ```
+
+### Get the directory (absolute path) contains calling script
+
+    #!/bin/bash
+
+    DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
